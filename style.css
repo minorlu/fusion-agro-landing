@@ -1,9 +1,19 @@
-#navbar img {
-    height: 70px;
+:root {
+  --nav-height: 76px;
+}
+
+#logo {
+  height: 60px;
+  padding: 5px 0;
 }
 
 #nav-container {
-    background-color: #ebebeb;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  background-color: #0f172a;
 }
 
 .nav-link {
@@ -23,6 +33,10 @@
   transition: width 0.3s ease;
 }
 
+.nav-link {
+  color: #ffffff;
+}
+
 .nav-link:hover {
   color: #28a745;
 }
@@ -31,10 +45,75 @@
   width: 100%;
 }
 
-#company-name:hover {
-    color: #28a745;
+.navbar-toggler {
+  border-color: white;
 }
 
-#company-name {
-    transition: color 0.3s ease-in-out;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#progressbar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  background: #28a745;
+}
+
+#hero-block h2,
+#hero-block h1 {
+  color: #0f172a !important;
+}
+
+#hero-block {
+  position: relative;
+  min-height: calc(100vh - var(--nav-height));
+  margin-top: var(--nav-height);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transform: scale(1.15);
+  will-change: transform;
+  pointer-events: none;
+}
+
+.about-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+  filter: blur(5px);
+}
+
+#hero-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.45);
+  z-index: 2;
+}
+
+.about-content {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 320px) {
+  #hero-block h1 {
+    font-size: 1.7rem;
+  }
+
+  #hero-block h2 {
+    font-size: 1rem !important;
+  }
 }

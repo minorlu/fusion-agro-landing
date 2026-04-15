@@ -1,54 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ФЬЮЖН АГРО</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container-fluid position-fixed shadow" id="nav-container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-lg-flex" id="navbar">
-            <span class="col-lg-2 d-flex">
-              <img class="me-2" src="src/img/fusion-agro-logo.png" alt="Логотип Фьюжн Агро">
-              <a class="navbar-brand align-self-center" href="#" id="company-name">ФЬЮЖН АГРО</a>
-            </span>
-            <ul class="navbar-nav col-lg-8 justify-content-lg-center fw-normal" id="nav-items">
-              <li class="nav-item px-2"><a class="nav-link" href="#">О продукте</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#">Преимущества</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#">Галерея</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#">О нас</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#">Контакты</a></li>
-              
-            </ul>
-            <div class="d-lg-flex col-lg-2 justify-content-lg-end"></div>
-          </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ФЬЮЖН АГРО</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="src/img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container-fluid position-fixed shadow" id="nav-container">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="col-lg-2" href="#">
+          <img id="logo" src="src/img/fusion-agro-logo-text.png" alt="Логотип Фьюжн Агро" />
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-lg-8 d-md-flex justify-content-lg-center" id="navbar">
+          <ul class="navbar-nav justify-content-lg-center fw-normal" id="nav-items">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#about-block">О продукте</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Преимущества</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Галерея</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">О нас</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+        <div class="d-none d-md-flex col-lg-2 justify-content-lg-end"></div>
+      </div>
+    </nav>
+    <div id="progressbar"></div>
+  </div>
+
+  <section class="text-center container-fluid" id="hero-block">
+    <picture class="about-bg">
+      <source media="(max-width: 576px)" srcset="src/img/hero-bg-image-phone.jpg" />
+      <source media="(max-width: 992px)" srcset="src/img/hero-bg-image-tablet.jpg" />
+      <source media="(max-width: 1920px)" srcset="src/img/hero-bg-image-fhd.jpg" />
+      <img src="src/img/hero-bg-image-full.jpg" alt="" />
+    </picture>
+
+    <div class="container-md px-5 text-center about-content col-md-10">
+      <h1 class="display-4 fw-bold">
+        Система раннего обнаружения перегрева и возгораний зерноуборочных
+        комбайнов
+      </h1>
+      <div class="mx-auto">
+        <h2 class="fs-3 pt-1 fw-normal">
+          Инновационное решение для повышения безопасности
+          сельскохозяйственной техники, снижения риска пожаров и сохранения
+          урожая.
+        </h2>
+      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </section>
+
+  <section id="about-block">
+    <div class="container px-4 py-5" id="featured-3">
+      <h3 class="fs-1 pb-2 border-bottom">О продукте</h3>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
+            <i class="bi bi-info-square-fill" style="color: #28a745;"></i>
+          </div>
+          <h4 class="fs-3 text-body-emphasis">О проекте</h4>
+          <p>
+            Разрабатываем электронно-цифровую систему мониторинга температуры критически важных узлов зерноуборочного
+            комбайна. Решение позволяет заранее выявлять опасный перегрев и предупреждать риск возгорания техники во
+            время уборки.
+          </p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
+            <i class="bi bi-chat-right-quote-fill" style="color: #28a745;"></i>
+          </div>
+          <h4 class="fs-3 text-body-emphasis">Задача</h4>
+          <p>
+            Во время уборки комбайн работает в условиях пыли, сухой растительной массы и высокой тепловой нагрузки.
+            Перегрев отдельных узлов может привести к возгоранию, остановке работ, потере урожая и серьёзным затратам.
+            Система ориентирована на раннее предупреждение, а не на реакцию после аварии.
+          </p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
+            <i class="bi bi-question-square-fill" style="color: #28a745;"></i>
+          </div>
+          <h4 class="fs-3 text-body-emphasis">Принцип работы</h4>
+          <p>
+            На критически важных узлах комбайна размещаются температурные датчики. Данные с датчиков поступают в систему
+            мониторинга и обрабатываются в режиме реального времени. При выявлении опасного перегрева система формирует
+            предупреждающий сигнал, после чего оператор может принять меры до возникновения возгорания.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
