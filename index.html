@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="src/img/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="src/additional/carousel.css">
   <script src="script.js" defer></script>
 </head>
 
@@ -30,7 +31,7 @@
               <a class="nav-link" href="#about-block">О продукте</a>
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#">Преимущества</a>
+              <a class="nav-link" href="#advantages-block">Преимущества</a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link" href="#">Галерея</a>
@@ -77,8 +78,7 @@
       <h3 class="fs-1 pb-2 border-bottom">О продукте</h3>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
             <i class="bi bi-info-square-fill" style="color: #28a745;"></i>
           </div>
           <h4 class="fs-3 text-body-emphasis">О проекте</h4>
@@ -89,8 +89,7 @@
           </p>
         </div>
         <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
             <i class="bi bi-chat-right-quote-fill" style="color: #28a745;"></i>
           </div>
           <h4 class="fs-3 text-body-emphasis">Задача</h4>
@@ -101,8 +100,7 @@
           </p>
         </div>
         <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-1">
             <i class="bi bi-question-square-fill" style="color: #28a745;"></i>
           </div>
           <h4 class="fs-3 text-body-emphasis">Принцип работы</h4>
@@ -112,6 +110,71 @@
             предупреждающий сигнал, после чего оператор может принять меры до возникновения возгорания.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantages-block">
+    <div class="advantages-text p-5">
+      <h3 class="fs-1 mb-3 pb-3 border-bottom">Преимущества</h3>
+      <p class="fs-4">
+        Решение может применяться на зерноуборочных комбайнах, в фермерских хозяйствах,
+        сельскохозяйственных предприятиях, агрохолдингах, а также в организациях,
+        которые эксплуатируют и обслуживают сельхозтехнику.
+      </p>
+    </div>
+
+    <div class="advantages-slider">
+      <div id="myCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <div class="slide-bg"></div>
+            <div class="container h-100 d-flex align-items-center">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">
+                  Some representative placeholder content for the first slide of the carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item h-100">
+            <div class="slide-bg"></div>
+            <div class="container h-100 d-flex align-items-center">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item h-100">
+            <div class="slide-bg"></div>
+            <div class="container h-100 d-flex align-items-center">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
   </section>

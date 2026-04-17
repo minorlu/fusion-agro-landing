@@ -64,7 +64,7 @@
 
 #hero-block h2,
 #hero-block h1 {
-  color: #0f172a !important;
+  color: #ffffff !important;
 }
 
 #hero-block {
@@ -99,7 +99,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 2;
 }
 
@@ -115,5 +115,61 @@
 
   #hero-block h2 {
     font-size: 1rem !important;
+  }
+}
+
+#advantages-block {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  align-items: stretch;
+}
+
+.advantages-text {
+  background: #f8f9fa;
+}
+
+.advantages-slider {
+  background: #5c6066; /* убирает белый низ справа */
+}
+
+#myCarousel {
+  height: 100%;
+  background: #5c6066;
+}
+
+#myCarousel .carousel-inner,
+#myCarousel .carousel-item,
+#myCarousel .carousel-item.active {
+  height: 100%;
+}
+
+#myCarousel .carousel-item {
+  position: relative;
+  min-height: 100%;
+}
+
+#myCarousel .slide-bg {
+  position: absolute;
+  inset: 0;
+  background: #5c6066;
+}
+
+#myCarousel .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+#myCarousel .carousel-caption {
+  bottom: auto;
+}
+
+@media (max-width: 991.98px) {
+  #advantages-block {
+    grid-template-columns: 1fr;
+  }
+
+  .advantages-slider {
+    min-height: 400px;
   }
 }
