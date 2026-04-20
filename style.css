@@ -99,7 +99,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
 
@@ -118,58 +118,59 @@
   }
 }
 
-#advantages-block {
-  display: grid;
-  grid-template-columns: 4fr 8fr;
-  align-items: stretch;
+.advantages-container {
+  background: #eeeeee;
 }
 
-.advantages-text {
-  background: #f8f9fa;
+.carousel-caption {
+  padding-bottom: 2rem;
 }
 
-.advantages-slider {
-  background: #5c6066; /* убирает белый низ справа */
+#early-detection {
+  background-image: url(src/img/early-detection-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#myCarousel {
-  height: 100%;
-  background: #5c6066;
+#fire-risk-reduction {
+  background-image: url(src/img/fire-risk-reduction-image.jpg);
+  background-position: bottom 30% left 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#myCarousel .carousel-inner,
-#myCarousel .carousel-item,
-#myCarousel .carousel-item.active {
-  height: 100%;
+#safety-increasing {
+  background-image: url(src/img/safety-increasing-image.jpg);
+  background-position: top 30% left 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#myCarousel .carousel-item {
-  position: relative;
-  min-height: 100%;
+#prompt-react {
+  background-image: url(src/img/prompt-react-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#myCarousel .slide-bg {
-  position: absolute;
-  inset: 0;
-  background: #5c6066;
+#damage-reduction {
+  background-image: url(src/img/damage-reduction-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#myCarousel .container {
-  position: relative;
-  z-index: 2;
-  height: 100%;
+#visual-control {
+  background-image: url(src/img/visual-control-image.png);
+  background-position: top 60% left 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#myCarousel .carousel-caption {
-  bottom: auto;
-}
-
-@media (max-width: 991.98px) {
-  #advantages-block {
-    grid-template-columns: 1fr;
-  }
-
-  .advantages-slider {
-    min-height: 400px;
-  }
+#scalability {
+  background-image: url(src/img/scalability-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
