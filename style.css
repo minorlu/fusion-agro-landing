@@ -203,3 +203,10 @@
 #sergey_photo {
   object-position: center 0%;
 }
+
+/* Anchor link fix */
+#about-block,
+#advantages-block,
+#about-us-block {
+  scroll-margin-top: calc(var(--nav-height));
+}
