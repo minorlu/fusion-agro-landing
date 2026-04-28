@@ -174,3 +174,32 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.employee-card {
+  background-color: #eaffd8;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.employee-card h6 {
+  margin-bottom: 0 !important;
+}
+
+.employee-photo {
+  width: 80%;
+  max-width: 300px;
+  min-width: 110px;
+
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+#igor_photo,
+#sergey_photo {
+  object-position: center 0%;
+}
