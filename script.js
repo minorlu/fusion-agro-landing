@@ -34,3 +34,48 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", updateParallax);
   window.addEventListener("resize", updateParallax);
 });
+
+const phoneInput = document.getElementById("phone");
+
+phoneInput.addEventListener("input", () => {
+  let digits = phoneInput.value.replace(/\D/g, "");
+
+  // Если поле полностью пустое, ничего не показываем
+  if (digits.length === 0) {
+    phoneInput.value = "";
+    return;
+  }
+  
+  if (digits.startsWith("7")) {
+    digits = digits.slice(1);
+  }
+
+  // Оставляем только 10 цифр номера
+  digits = digits.slice(0, 10);
+
+  // Если после удаления 7/8 ничего не осталось
+  if (digits.length === 0) {
+    phoneInput.value = "";
+    return;
+  }
+
+  let formatted = "+7";
+
+  if (digits.length > 0) {
+    formatted += " " + digits.slice(0, 3);
+  }
+
+  if (digits.length >= 4) {
+    formatted += " " + digits.slice(3, 6);
+  }
+
+  if (digits.length >= 7) {
+    formatted += " " + digits.slice(6, 8);
+  }
+
+  if (digits.length >= 9) {
+    formatted += " " + digits.slice(8, 10);
+  }
+
+  phoneInput.value = formatted;
+});

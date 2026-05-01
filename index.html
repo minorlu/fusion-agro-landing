@@ -37,7 +37,7 @@
               <a class="nav-link" href="#about-us-block">О нас</a>
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#contacts-block">Контакты</a>
             </li>
           </ul>
         </div>
@@ -253,7 +253,7 @@
 
       <div class="team-cards container px-4 pb-5">
         <h4 class="fs-3 mb-3 pb-3">Команда</h4>
-        <div id="team-cards" class="row g-4 row-cols-1 row-cols-lg-3 row-cols-sm-2">
+        <div id="team-cards" class="row g-4 row-cols-1 row-cols-lg-3 row-cols-sm-2 pb-3">
           <div class="col">
             <div class="employee-card h-100 text-center">
               <img class="employee-photo" src="src/img/ilya.jpg" alt="Фото Нещадимова Ильи Сергеевича">
@@ -263,14 +263,16 @@
           </div>
           <div class="col">
             <div class="employee-card h-100 text-center">
-              <img id="sergey_photo" class="employee-photo" src="src/img/sergey.jpg" alt="Фото Ридного Сергея Дмитриевича">
+              <img id="sergey_photo" class="employee-photo" src="src/img/sergey.jpg"
+                alt="Фото Ридного Сергея Дмитриевича">
               <h5>Ридный Сергей Дмитриевич</h5>
               <h6>Эксперт в области сельскохозяйственной техники</h6>
             </div>
           </div>
           <div class="col">
             <div class="employee-card h-100 text-center">
-              <img id="igor_photo" class="employee-photo" src="src/img/igor.jpg" alt="Фото Воротникова Игоря Николаевича">
+              <img id="igor_photo" class="employee-photo" src="src/img/igor.jpg"
+                alt="Фото Воротникова Игоря Николаевича">
               <h5>Воротников Игорь Николаевич</h5>
               <h6>Эксперт в области электротехники и электромагнитной совместимости</h6>
             </div>
@@ -298,6 +300,93 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="contacts-block">
+    <div class="contacts-container py-5">
+      <div class="contacts-header container px-4">
+        <h3 class="fs-1 mb-3 pb-3 border-bottom">Контакты</h3>
+      </div>
+
+      <div class="contacts-inner container px-4">
+
+        <div class="row g-4 align-items-start">
+          <div class="contacts-text col-12 col-lg-5">
+            <p class="fs-5 mb-4">Обращайтесь к нам с вопросами, за поддержкой или по поводу сотрудничества.<br>Мы будем
+              рады помочь вам!</p>
+            <div class="contacts-item d-flex align-items-start gap-2 mb-2">
+              <div class="feature-icon d-flex justify-content-center" style="min-width: 24px;">
+                <i class="bi bi-file-person-fill" style="color: #575757"></i>
+              </div>
+              <p class="m-0">ООО "ФЬЮЖН АГРО"</p>
+            </div>
+            <div class="contacts-item d-flex align-items-start gap-2 mb-2">
+              <div class="feature-icon d-flex justify-content-center" style="min-width: 24px;">
+                <i class="bi bi-telephone-fill" style="color: #575757"></i>
+              </div>
+              <p class="m-0">+7 918 791 80 97</p>
+            </div>
+            <div class="contacts-item d-flex align-items-start gap-2 mb-2">
+              <div class="feature-icon d-flex justify-content-center" style="min-width: 24px;">
+                <i class="bi bi-envelope-fill" style="color: #575757"></i>
+              </div>
+              <p class="m-0">neschadimovis@yandex.ru</p>
+            </div>
+            <div class="contacts-item d-flex align-items-start gap-2 mb-2">
+              <div class="feature-icon d-flex justify-content-center" style="min-width: 24px;">
+                <i class="bi bi-geo-alt-fill" style="color: #575757"></i>
+              </div>
+              <p class="m-0">355013, Ставропольский край,<br>г. Ставрополь, ул. Серова, д. 470/6, кв. 29</p>
+            </div>
+            <div class="contacts-item d-flex align-items-start gap-2 mb-2">
+              <div class="feature-icon d-flex justify-content-center" style="min-width: 24px;">
+                <i class="bi bi-clock-fill" style="color: #575757"></i>
+              </div>
+              <p class="m-0">Пн-Пт - 08:00-17:00<br>Сб-Вс - Выходные<br>Перерыв - 12:00-13:00</p>
+            </div>
+          </div>
+
+          <div class="contacts-form col-12 col-lg-7">
+            <h5 class="fs-5 pb-2">Свяжитесь с нами</h5>
+            <form>
+              <div class="row mb-3 align-items-center">
+                <label for="name" class="col-md-2 col-form-label pe-2">Ваше имя</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="name" placeholder="Введите имя">
+                </div>
+              </div>
+
+              <div class="row mb-3 align-items-center">
+                <label for="phone" class="col-md-2 col-form-label pe-2">Телефон</label>
+                <div class="col-md-10">
+                  <input type="tel" class="form-control" id="phone" name="phone" inputmode="numeric" placeholder="+7 ___ ___ __ __">
+                </div>
+              </div>
+
+              <div class="row mb-3 align-items-center">
+                <label for="email" class="col-md-2 col-form-label pe-2">Email</label>
+                <div class="col-md-10">
+                  <input type="email" class="form-control" id="email" placeholder="example@mail.ru">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <label for="message" class="col-md-2 col-form-label pe-2">Сообщение</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" id="message" rows="1" placeholder="Напишите сообщение"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn px-4 w-100 mb-2">Отправить</button>
+              <p>Нажимая кнопку "Отправить", вы соглашаетесь на <a href="">Обработку персональных данных</a> и
+                принимаете <a href="">Политику конфиденциальности</a></p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 

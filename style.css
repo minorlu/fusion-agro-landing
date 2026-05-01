@@ -118,7 +118,8 @@
   }
 }
 
-.advantages-container {
+.advantages-container,
+.contacts-container {
   background: #eeeeee;
 }
 
@@ -207,6 +208,27 @@
 /* Anchor link fix */
 #about-block,
 #advantages-block,
-#about-us-block {
+#about-us-block,
+#contacts-block {
   scroll-margin-top: calc(var(--nav-height));
+}
+
+.contacts-inner {
+  gap: 5rem;
+}
+
+#contacts-block button {
+  background: #28a745;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contacts-form p {
+  font-size: 0.8rem;
+  color: #575757;
+}
+
+.contacts-form p a {
+  color: #155022;
 }
