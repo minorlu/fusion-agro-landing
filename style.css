@@ -232,3 +232,14 @@
 .contacts-form p a {
   color: #155022;
 }
+
+.contacts-form p a:hover {
+  text-decoration: none;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}

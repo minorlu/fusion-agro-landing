@@ -79,3 +79,43 @@ phoneInput.addEventListener("input", () => {
 
   phoneInput.value = formatted;
 });
+
+const contactForm = document.querySelector("#contactForm");
+const formStatus = document.querySelector("#formStatus");
+const formStartedAt = document.querySelector("#formStartedAt");
+
+if (contactForm && formStatus && formStartedAt) {
+  formStartedAt.value = Date.now().toString();
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    formStatus.textContent = "Отправляем...";
+
+    try {
+      const formData = new FormData(contactForm);
+      const body = new URLSearchParams(formData);
+
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.ok) {
+        throw new Error(data.message || "Не удалось отправить заявку.");
+      }
+
+      contactForm.reset();
+      formStartedAt.value = Date.now().toString();
+
+      formStatus.textContent = "Заявка отправлена. Мы свяжемся с вами.";
+    } catch (error) {
+      formStatus.textContent = error.message;
+    }
+  });
+}

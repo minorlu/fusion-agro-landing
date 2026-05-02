@@ -349,34 +349,47 @@
 
           <div class="contacts-form col-12 col-lg-7">
             <h5 class="fs-5 pb-2">Свяжитесь с нами</h5>
-            <form>
+
+            <form id="contactForm" action="http://localhost:3000/api/contact" method="POST">
               <div class="row mb-3 align-items-center">
                 <label for="name" class="col-md-2 col-form-label pe-2">Ваше имя</label>
                 <div class="col-md-10">
-                  <input type="text" class="form-control" id="name" placeholder="Введите имя">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required>
                 </div>
               </div>
 
               <div class="row mb-3 align-items-center">
                 <label for="phone" class="col-md-2 col-form-label pe-2">Телефон</label>
                 <div class="col-md-10">
-                  <input type="tel" class="form-control" id="phone" name="phone" inputmode="numeric" placeholder="+7 ___ ___ __ __">
+                  <input type="tel" class="form-control" id="phone" name="phone" inputmode="numeric"
+                    placeholder="+7 ___ ___ __ __" required>
                 </div>
               </div>
 
               <div class="row mb-3 align-items-center">
                 <label for="email" class="col-md-2 col-form-label pe-2">Email</label>
                 <div class="col-md-10">
-                  <input type="email" class="form-control" id="email" placeholder="example@mail.ru">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.ru"
+                    required>
                 </div>
               </div>
 
               <div class="row mb-4">
                 <label for="message" class="col-md-2 col-form-label pe-2">Сообщение</label>
                 <div class="col-md-10">
-                  <textarea class="form-control" id="message" rows="1" placeholder="Напишите сообщение"></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="1"
+                    placeholder="Напишите сообщение"></textarea>
                 </div>
               </div>
+
+              <div class="hp-field" aria-hidden="true">
+                <label for="website">Ваш сайт</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <input type="hidden" id="formStartedAt" name="formStartedAt">
+
+              <p id="formStatus" class="mt-2"></p>
 
               <button type="submit" class="btn px-4 w-100 mb-2">Отправить</button>
               <p>Нажимая кнопку "Отправить", вы соглашаетесь на <a href="">Обработку персональных данных</a> и
