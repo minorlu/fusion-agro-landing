@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="src/img/favicon.webp" type="image/x-icon" />
+  <link rel="icon" href="src/img/favicon.webp" type="image/webp" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="src/additional/carousel.css" />
   <script src="script.js" defer></script>
@@ -257,7 +257,7 @@
         <div id="team-cards" class="row g-4 row-cols-1 row-cols-lg-3 row-cols-sm-2 pb-3">
           <div class="col">
             <div class="employee-card h-100 text-center">
-              <img class="employee-photo" src="src/img/ilya.webp" alt="Фото Нещадимова Ильи Сергеевича" />
+              <img class="employee-photo" src="src/img/ilya.webp" alt="Фото Нещадимова Ильи Сергеевича" loading="lazy"/>
               <h5>Нещадимов Илья Сергеевич</h5>
               <h6>Руководитель проекта</h6>
             </div>
@@ -265,7 +265,7 @@
           <div class="col">
             <div class="employee-card h-100 text-center">
               <img id="sergey_photo" class="employee-photo" src="src/img/sergey.webp"
-                alt="Фото Ридного Сергея Дмитриевича" />
+                alt="Фото Ридного Сергея Дмитриевича" loading="lazy"/>
               <h5>Ридный Сергей Дмитриевич</h5>
               <h6>Эксперт в области сельскохозяйственной техники</h6>
             </div>
@@ -273,7 +273,7 @@
           <div class="col">
             <div class="employee-card h-100 text-center">
               <img id="igor_photo" class="employee-photo" src="src/img/igor.webp"
-                alt="Фото Воротникова Игоря Николаевича" />
+                alt="Фото Воротникова Игоря Николаевича" loading="lazy"/>
               <h5>Воротников Игорь Николаевич</h5>
               <h6>
                 Эксперт в области электротехники и электромагнитной
@@ -283,21 +283,21 @@
           </div>
           <div class="col">
             <div class="employee-card h-100 text-center">
-              <img class="employee-photo" src="src/img/denis.webp" alt="Фото Щербо Дениса Андреевича" />
+              <img class="employee-photo" src="src/img/denis.webp" alt="Фото Щербо Дениса Андреевича" loading="lazy"/>
               <h5>Щербо Денис Андреевич</h5>
               <h6>Программист</h6>
             </div>
           </div>
           <div class="col">
             <div class="employee-card h-100 text-center">
-              <img class="employee-photo" src="src/img/egor.webp" alt="Фото Гарькавого Егора Дмитриевича" />
+              <img class="employee-photo" src="src/img/egor.webp" alt="Фото Гарькавого Егора Дмитриевича" loading="lazy"/>
               <h5>Гарькавый Егор Дмитриевич</h5>
               <h6>Системный администратор</h6>
             </div>
           </div>
           <div class="col">
             <div class="employee-card h-100 text-center">
-              <img class="employee-photo" src="src/img/irina.webp" alt="Фото Лисуковой Ирины Александровны" />
+              <img class="employee-photo" src="src/img/irina.webp" alt="Фото Лисуковой Ирины Александровны" loading="lazy"/>
               <h5>Лисукова Ирина Александровна</h5>
               <h6>Маркетолог-аналитик</h6>
             </div>
@@ -411,10 +411,10 @@
 
                 <label class="form-check-label" for="personalDataConsent">
                   Я даю
-                  <a href="service-pages/consent.html" target="_blank">Согласие на обработку моих персональных
+                  <a href="service-pages/consent.html" rel="noopener noreferrer" target="_blank">Согласие на обработку моих персональных
                     данных</a>
                   в соответствии с
-                  <a href="service-pages/privacy-policy.html" target="_blank">Политикой конфиденциальности</a>.
+                  <a href="service-pages/privacy-policy.html" rel="noopener noreferrer" target="_blank">Политикой конфиденциальности</a>.
                 </label>
               </div>
             </form>
@@ -437,13 +437,13 @@
             университетского технологического предпринимательства»
             федерального проекта «Технологии».
           </p>
-          <img src="src/img/Platform.webp" alt="Платформа УТП" class="col-12 col-md-3 col-lg-3" />
+          <img src="src/img/Platform.webp" alt="Платформа УТП" class="col-12 col-md-3 col-lg-3" loading="lazy"/>
         </div>
 
         <div class="row gy-3 gx-3 align-items-center footer-contacts mb-3">
           <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center align-items-center">
-            <img id="footer-logo" class="footer-logo" src="src/img/fusion-agro-logo-text.webp"
-              alt="Логотип ООО Фьюжн Агро" />
+            <img class="footer-logo" src="src/img/fusion-agro-logo-text.webp"
+              alt="Логотип ООО Фьюжн Агро" loading="lazy"/>
           </div>
 
           <div
@@ -465,17 +465,17 @@
 
           <div
             class="footer-contacts-policy-consent col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <a href="service-pages/privacy-policy.html" target="_blank">
+            <a href="service-pages/privacy-policy.html" rel="noopener noreferrer" target="_blank">
               Политика конфиденциальности
             </a>
-            <a href="service-pages/consent.html" target="_blank">
+            <a href="service-pages/consent.html" rel="noopener noreferrer" target="_blank">
               Согласие на обработку персональных данных
             </a>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center align-items-center">
-            <img id="footer-fond-logo" class="footer-fond-logo" src="src/img/Footer-Fond.webp"
-              alt="Логотип Фонда содействия инновациям" />
+            <img class="footer-fond-logo" src="src/img/Footer-Fond.webp"
+              alt="Логотип Фонда содействия инновациям" loading="lazy"/>
           </div>
         </div>
       </div>
