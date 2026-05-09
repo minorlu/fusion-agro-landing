@@ -128,49 +128,49 @@
 }
 
 #early-detection {
-  background-image: url(src/img/early-detection-image.png);
+  background-image: url(src/img/early-detection-image.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #fire-risk-reduction {
-  background-image: url(src/img/fire-risk-reduction-image.jpg);
+  background-image: url(src/img/fire-risk-reduction-image.webp);
   background-position: bottom 30% left 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #safety-increasing {
-  background-image: url(src/img/safety-increasing-image.jpg);
+  background-image: url(src/img/safety-increasing-image.webp);
   background-position: top 30% left 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #prompt-react {
-  background-image: url(src/img/prompt-react-image.png);
+  background-image: url(src/img/prompt-react-image.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #damage-reduction {
-  background-image: url(src/img/damage-reduction-image.jpg);
+  background-image: url(src/img/damage-reduction-image.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #visual-control {
-  background-image: url(src/img/visual-control-image.png);
+  background-image: url(src/img/visual-control-image.webp);
   background-position: top 60% left 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #scalability {
-  background-image: url(src/img/scalability-image.jpg);
+  background-image: url(src/img/scalability-image.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
