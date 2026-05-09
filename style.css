@@ -118,7 +118,8 @@
   }
 }
 
-.advantages-container {
+.advantages-container,
+.contacts-container {
   background: #eeeeee;
 }
 
@@ -207,6 +208,174 @@
 /* Anchor link fix */
 #about-block,
 #advantages-block,
-#about-us-block {
+#about-us-block,
+#contacts-block {
   scroll-margin-top: calc(var(--nav-height));
 }
+
+.contacts-inner {
+  gap: 5rem;
+}
+
+#contacts-block button {
+  background: #28a745;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contacts-form p {
+  font-size: 0.8rem;
+  color: #575757;
+}
+
+.contacts-form p a {
+  color: #155022;
+}
+
+.contacts-form p a:hover {
+  text-decoration: none;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.privacy-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.privacy-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-card h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.privacy-card h3 {
+  font-size: 1.35rem;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.privacy-card p {
+  margin-bottom: 12px;
+}
+
+.privacy-card ul {
+  margin-bottom: 16px;
+  padding-left: 1.5rem;
+}
+
+.privacy-card li {
+  margin-bottom: 6px;
+}
+
+.privacy-meta {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.privacy-card a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-card a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .privacy-page {
+    padding: 24px 12px;
+  }
+
+  .privacy-card {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+
+  .privacy-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .privacy-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.consent-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 16px;
+        }
+
+        .consent-card {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .consent-card h1 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+
+        .consent-card h2 {
+            font-size: 1.35rem;
+            margin-top: 36px;
+            margin-bottom: 16px;
+        }
+
+        .consent-card p {
+            margin-bottom: 12px;
+        }
+
+        .consent-card ul {
+            margin-bottom: 16px;
+        }
+
+        .consent-meta {
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        .consent-card a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .consent-card a:hover {
+            text-decoration: none;
+        }
+
+        @media (max-width: 576px) {
+            .consent-page {
+                padding: 24px 12px;
+            }
+
+            .consent-card {
+                padding: 24px 18px;
+            }
+
+            .consent-card h1 {
+                font-size: 1.6rem;
+            }
+
+            .consent-card h2 {
+                font-size: 1.2rem;
+            }
+        }
