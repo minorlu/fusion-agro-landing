@@ -392,8 +392,15 @@
               <p id="formStatus" class="mt-2"></p>
 
               <button type="submit" class="btn px-4 w-100 mb-2">Отправить</button>
-              <p>Нажимая кнопку "Отправить", вы соглашаетесь на <a href="">Обработку персональных данных</a> и
-                принимаете <a href="">Политику конфиденциальности</a></p>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="personalDataConsent" name="personalDataConsent"
+                  required>
+
+                <label class="form-check-label" for="personalDataConsent">
+                  Я даю <a href="service-pages/consent.html" target="_blank">Согласие на обработку моих персональных данных</a> в соответствии с
+                  <a href="service-pages/privacy-policy.html" target="_blank">Политикой конфиденциальности</a>.
+                </label>
+              </div>
             </form>
           </div>
         </div>
